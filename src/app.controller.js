@@ -6,7 +6,7 @@ const bootstrap = (app,express)=>{
   app.use(express.json());
   dbConnect();
   app.use("/auth", authController);
-  app.use("/user", userController); // localhost:3000/user
+  app.use("/user", userController); // localhost:3000/use
   app.use("/message", messageController); //localhost:3000/message
 }
 
